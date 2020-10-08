@@ -1,5 +1,6 @@
 {
   "name": "haweya",
+  "homepage": "https://haweya.club/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
