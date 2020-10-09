@@ -1,6 +1,6 @@
 {
   "name": "haweya",
-  "homepage": " https://eughami.github.io/.",
+  "homepage": " https://haweya.club.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.6.6",
     "react": "^16.13.1",
+    "react-alice-carousel": "^2.0.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
