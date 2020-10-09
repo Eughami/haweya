@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch,/*Route, Redirect Link*/ } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PrivateRoute from './components/PrivateRoute' 
+import PublicRoute from './components/PublicRoute' 
+import LoginForm from './components/loginForm'
+import Homepage from './components/homepage';
+
+import Letter from './components/letter';
+import BooVideo from './components/BooVideo';
+import BooImges from './components/BooImges';
+import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+class App extends React.Component {
+  
+  render(){
+    return (
+      <div className="App">
+        <Router>
+          <Switch>
+            <PublicRoute restricted={true} component={LoginForm} path="/login" exact />
+            <PrivateRoute component={Homepage} exact path="/"  />
+            <PrivateRoute component={Letter} exact path="/letter"  />
+            <PrivateRoute component={BooVideo} exact path="/video"  />
+            <PrivateRoute component={BooImges} exact path="/images"  />
+            {/* <PrivateRoute component={Homepage} path="/"  /> */}
+          </Switch>
+        </Router>
+      </div>  
+    );
+  }
 }
 
 export default App;
