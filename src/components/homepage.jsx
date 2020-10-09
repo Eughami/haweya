@@ -21,9 +21,9 @@ class Homepage extends React.Component{
     return(
       <div className='Welcome__page__container'>
         
-        <div className='welcome__page__buttons' onClick={() => this.handleClick('first')}>Letter</div>
-        <div className='welcome__page__buttons' onClick={() => this.handleClick('second')}>Images</div>
-        <div className='welcome__page__buttons' onClick={() => this.handleClick('third')}>Video</div>
+        <div className='heart-shape' onClick={() => this.handleClick('first')} style={{color: '#e76c6c'}}>Letter</div>
+        <div className='heart-shape' onClick={() => this.handleClick('second')} style={{color: '#e76c6c'}}>Images</div>
+        <div className='heart-shape' onClick={() => this.handleClick('third')} style={{color: '#e76c6c'}}>Video</div>
       </div>
     )
   }
