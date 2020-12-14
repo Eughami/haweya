@@ -1,7 +1,6 @@
 @import '~antd/dist/antd.css';
 
-
-.login__form__container{
+.login__form__container {
   background-image: url('./images/loginBackground.jpg');
   /* padding-top: 20vh; */
   background-position: center; /* Center the image */
@@ -15,7 +14,7 @@
   height: 100vh;
   margin: auto;
 }
-.Welcome__page__container{
+.Welcome__page__container {
   background-image: url('./images/mainBackground.jpeg');
   background-position: center; /* Center the image */
   background-repeat: repeat; /* Do not repeat the image */
@@ -47,20 +46,20 @@
 }
 
 */
-.welcome__page__buttons:hover{
+.welcome__page__buttons:hover {
   cursor: pointer;
 }
 @keyframes spin {
   from {
-      transform:rotate(0deg);
-      opacity: 0.7;
+    transform: rotate(0deg);
+    opacity: 0.7;
   }
   to {
-      transform:rotate(360deg);
-      opacity: 0.5;
+    transform: rotate(360deg);
+    opacity: 0.5;
   }
 }
-.heart-shape{
+.heart-shape {
   position: relative;
   width: 100px;
   height: 100px;
@@ -71,20 +70,18 @@
   transform: rotate(45deg);
   background-color: #e76c6c;
 
-
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   background-color: #e76c6c;
   animation-name: spin;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 .heart-shape:before,
-.heart-shape:after{
+.heart-shape:after {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -95,34 +92,33 @@
   border-radius: 50%;
   background-color: #e76c6c;
 
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.heart-shape:before{
+.heart-shape:before {
   bottom: 0px;
   left: -50px;
 }
-.heart-shape:after{
+.heart-shape:after {
   top: -50px;
   right: 0px;
 }
-.letter__container{
+.letter__container {
   width: 100%;
   height: 100vh;
 }
-.letter__container img{
+.letter__container img {
   width: 100%;
   height: 100%;
 }
-.sliderimg{
+.sliderimg {
   width: 100%;
   height: 80vh;
-  object-fit: contain 
+  object-fit: contain;
 }
 
-.video__page__container{
+.video__page__container {
   width: 100%;
   height: 100vh;
   background-image: url('./images/videoBack.jpeg');
@@ -134,10 +130,20 @@
   align-items: flex-end;
   padding-bottom: 50px;
 }
-.video__page__message{
+.video__page__message {
   font-size: 1.5rem;
   width: 80%;
   font-family: 'Lobster', cursive;
   color: #e76c6c;
-
+}
+.todo__list__title {
+  margin: 30px;
+  font-size: 2rem;
+  color: red;
+  font-family: 'Langar', cursive;
+}
+.todo__list__items__container {
+  border: black solid;
+  margin: 30px;
+  font-family: 'JetBrains Mono', monospace;
 }
