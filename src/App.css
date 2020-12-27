@@ -143,7 +143,15 @@
   font-family: 'Langar', cursive;
 }
 .todo__list__items__container {
-  border: black solid;
+  min-width: 350px;
+  min-height: 80px;
+  border: #eb2f96 dashed;
+  border-radius: 15px;
+  padding: 10px;
   margin: 30px;
   font-family: 'JetBrains Mono', monospace;
+}
+
+.todo__list__items__container > * {
+  padding: 5px;
 }
