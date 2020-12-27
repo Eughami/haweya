@@ -30,6 +30,7 @@ class NavBar extends React.Component {
           onClick={this.handleMenuClick}
           selectedKeys={[current]}
           mode="horizontal"
+          className="navBar__container"
         >
           <Menu.Item
             key="home"
