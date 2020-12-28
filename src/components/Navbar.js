@@ -25,8 +25,9 @@ class NavBar extends React.Component {
     const { current } = this.state;
     console.log('Selected keys : ', current);
     return (
-      <Row justify="space-around" align="middle">
+      <Row>
         <Menu
+          style={{ display: 'flex', justifyContent: 'space-around' }}
           onClick={this.handleMenuClick}
           selectedKeys={[current]}
           mode="horizontal"
@@ -37,7 +38,9 @@ class NavBar extends React.Component {
             icon={
               <HomeTwoTone twoToneColor={current === '' ? '#eb2f96' : ''} />
             }
-          />
+          >
+            Home
+          </Menu.Item>
           <Menu.Item
             key="letter"
             icon={
@@ -46,7 +49,7 @@ class NavBar extends React.Component {
               />
             }
           >
-            Letter
+            Images
           </Menu.Item>
           <Menu.Item
             key="images"

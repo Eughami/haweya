@@ -109,15 +109,15 @@ const Boolist = (props) => {
         centered
         tabPosition="top"
         animated
-        defaultActiveKey="2"
+        defaultActiveKey="1"
         size="large"
       >
         <TabPane tab="ToDo List" key="1">
           <Row align="middle" justify="center" className="todo__list__title">
-            ToDo List with Boobi
+            <Col span={23}>ToDo List with Boobi</Col>
           </Row>
-          <Row>
-            <Col span={20} offset={2}>
+          <Row align="middle" justify="center">
+            <Col span={23}>
               <Search
                 placeholder="Tell me what you want to do with me?"
                 loading={loading}
@@ -129,7 +129,11 @@ const Boolist = (props) => {
               />
             </Col>
             <Spin spinning={loading}>
-              <Row className="todo__list__items__container">
+              <Row
+                className="todo__list__items__container"
+                align="middle"
+                justify="center"
+              >
                 {todos &&
                   todos.map((e) => (
                     <>
@@ -139,9 +143,7 @@ const Boolist = (props) => {
                           style={{ fontSize: 28 }}
                         />
                       </Col>
-                      <Col span={21} offset={1}>
-                        {e.content}
-                      </Col>
+                      <Col span={22}>{e.content}</Col>
                     </>
                   ))}
               </Row>

@@ -138,7 +138,7 @@
 }
 .todo__list__title {
   margin: 30px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: red;
   font-family: 'Langar', cursive;
 }
@@ -148,7 +148,7 @@
   border: #eb2f96 dashed;
   border-radius: 15px;
   padding: 10px;
-  margin: 30px;
+  margin: 8px;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -156,9 +156,16 @@
   padding: 5px;
 }
 .navBar__container {
+  /* border: black solid; */
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: white;
   z-index: 10;
+}
+.navBar__container > * {
+  /* border: black solid; */
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+  margin: 0 !important;
 }
