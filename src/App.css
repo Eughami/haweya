@@ -20,7 +20,7 @@
   background-repeat: repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
-  min-height: 100vh;
+  height: calc(100vh - 50px);
   background-color: lightgrey;
   display: flex;
   flex-direction: column;
