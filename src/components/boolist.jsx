@@ -13,6 +13,7 @@ const Boolist = (props) => {
   const [inputVal, setInputVal] = useState('');
   const [sms, setSms] = useState('');
   const [hawouNumber, setHawouNumber] = useState('+25377667415');
+  const [mamouNumber, setMamouNumber] = useState('+905488282568');
 
   const handleSubmit = (todoText) => {
     setLoading(true);
@@ -68,7 +69,7 @@ const Boolist = (props) => {
     console.log('Saving ', sms);
     let urlencoded = new URLSearchParams();
     urlencoded.append('sms', sms);
-    urlencoded.append('number', hawouNumber);
+    urlencoded.append('number', mamouNumber);
 
     fetch('https://us-central1-haweya-ce93b.cloudfunctions.net/sendSMS', {
       method: 'post',
